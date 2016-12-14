@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Exo");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+[class*="col-"]{
+    width:100%;
+    float:left;
+}
+body{
+    background-image: url("http://www.wallpaperswidefree.com/images/Pawan-Kalyan-in-Dabang-movies-hd-wallpapers.jpg");
+    background-size: contain;
+}
+.head:after{
+    content: "";
+    clear: both;
+    display: block;
+    margin: auto;
+}
+header{
+    background-color: brown;
+}
+.top{
+    text-align: center;
+}
+.top h1{
+    font-family: shrikhand;
+}
+.profile{
+    float: right;
+    display:none;
+}
+.menu{
+    background-color: darkgray;
+    margin: 0px;
+    margin-top:-16px;
+    display:none;
+}
+.menu ul li{
+    list-style-type: none;
+    display:inline-block;
+    border:1px solid black;
+    width:23%;
+    text-align: center;
+    padding:0px;
+    position: relative;
+}
+li a{
+    text-decoration: none;
+}
+
+.accordion{
+    display: block;
+    width:100%;
+    text-align: center;
+    background-color: darkgray;
+    transition: 0.4s;
+}
+.mobmenu{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+.mobmenu p{
+    text-align: center;
+    font-size: 1.2em;
+}
+.mobmenu.show{
+    opacity: 1;
+    max-height: 500px;
+}
+.mobmenu a{
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.pro{
+    background-color:darkseagreen;
+}
+.image{
+    background-image:url("http://wallpapers.filmibeat.com/ph-1024x768/2015/06/pawan-kalyan_143452128280.jpg");
+    background-size: contain;
+    height:50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.name{
+    color:darkslateblue;
+    font:1.5em;
+    text-align: center;
+}
+.bio{
+    background-color:rgb(250, 215, 160);
+    display: block;
+}
+.bio h1{
+    text-align: center;
+    color:brown;
+    font:1.5em;
+    font-family: lobster;
+}
+.bio p{
+    font-family: Exo;
+}
+.grid{
+    background-color: darkseagreen;
+}
+.grid h1{
+    text-align: center;
+    color:brown;
+    font:1.5em;
+    font-family: lobster;
+}
+.grid2{
+    display: none;
+}
+.pic img{
+    width:100%;
+    height:300px;
+}
+.image1,.image2,.image3,.image4{
+    display: none;
+}
+.roles{
+    background-color: darkseagreen;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.roles h1{
+    text-align: center;
+    color: brown;
+    font:1.5em;
+    font-family: shrikhand;
+}
+.roles p{
+    display: none;
+    font-family: exo;
+}
+
+.lin{
+    background-color: darkcyan;
+    margin-top: 10px;
+}
+.award1,.award2{
+    text-align: center;
+    border:1px solid black;
+    font-family: cursive;
+}
+.awards p{
+    font-family: exo;
+}
+.links{
+    display: none;
+}
+.link1,.link2,.link3,.link4{
+    text-align: center;
+    text-decoration: none;
+    border:1px solid black;
+    padding:4px;
+}
+.links a{
+    text-decoration: none;
+    font-size: 1em;
+}
+.links a:hover{
+    color:lawngreen;
+    font-weight: bold;
+}
+.data{
+    background-color: brown;
+    margin-top: 15px;
+    text-align: center;
+}
+.onelink{
+    display:block;
+    text-align: center;
+    background-color: darkslateblue;
+    margin-top: 10px;
+}
+.onelink a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+    font-size: 1.3em;
+}
+.onelink a:hover{
+    color:chartreuse;
+}
+.app{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    .menu{
+        display: block;
+    }
+    .drop{
+        display: none;
+    }
+    .drop ul li{
+        display: block;
+        min-width: 150px;
+        text-align: center;
+        margin-left:0px;
+        background-color: #ECF0F1;     
+    }
+    .drop li a{
+        text-decoration: none;
+        color: #117A65;
+        display: block;
+        font-size: 1.2em;
+        white-space:nowrap;
+        
+    }
+    .menu1:hover .submenu1{
+        display: block;
+        position: absolute;
+    }
+    .menu2:hover .submenu2{
+        display: block;
+        position: absolute;
+    }
+    .menu3:hover .submenu3{
+        display: block;
+        position: absolute;
+    }
+    .menu4:hover .submenu4{
+        display: block;
+        position: absolute;
+    }
+    .mobi{
+        display: none;
+    }
+    .image1,.image2,.image3,.image4{
+        display: block;
+    }
+    .roles p{
+        display: block;
+    }
+    .links{
+        display: block;
+    }
+    .links a{
+        font-family: Exo;
+    }
+    .onelink{
+        display: none;
+    }
+    .app{
+        display: block;
+    }
+.col-t-1 {width: 8.33%;}
+.col-t-2 {width: 16.66%;}
+.col-t-3 {width: 25%;}
+.col-t-4 {width: 33.33%;}
+.col-t-5 {width: 41.66%;}
+.col-t-6 {width: 50%;}
+.col-t-7 {width: 58.33%;}
+.col-t-8 {width: 66.66%;}
+.col-t-9 {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        width: 90%;
+        margin: auto;
+ }
+    .profile{
+        display: block;
+    }
+    .mobi{
+        display: none;
+    }
+    .pro{
+        background-color: darkseagreen;
+    }
+    .image1,.image2,.image3,.image4{
+        display: block;
+    }
+    .roles{
+        background-color: darkseagreen;
+    }
+    .links{
+        display: block;
+    }
+    .pic img{
+        width:250px;
+        height:150px;
+    }
+    .onelink{
+        display: none;
+    }
+    .app{
+        display: block;
+    }
+    .grid2{display: block;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
